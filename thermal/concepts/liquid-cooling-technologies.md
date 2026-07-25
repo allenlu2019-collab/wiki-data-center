@@ -4,7 +4,7 @@ created: 2026-07-26
 updated: 2026-07-26
 type: concept
 tags: [liquid, cooling, thermal, cdu, rack, gpu]
-sources: []
+sources: [raw/articles/gpu-cooling.md]
 ---
 
 # Liquid Cooling Technologies
@@ -45,6 +45,8 @@ The dominant approach for current AI clusters (H100, B200 generation):
 | Jet impingement | Coolant jets directly onto die surface | ~0.05°C·cm²/W | $$ |
 | 3D vapor chamber | Wick structure + phase change inside cold plate | ~0.03°C·cm²/W | $$$ |
 | Hybrid (cold plate + rear door) | Cold plate for high-power cpts, rear-door for rest | Balanced | $$ |
+
+Microchannel lids move coolant distribution closer to the package and introduce additional sealing, pressure-drop, chemical-compatibility, and thermo-mechanical constraints. See [[thermal/concepts/microchannel-liquid-cooling]].
 
 ## Immersion Cooling
 
@@ -117,6 +119,7 @@ The 20-30 MW of waste heat from a large cluster can be repurposed:
 - **Economics**: heat reuse only viable if DC is colocated with heat demand (district heating network within ~1 km)
 
 ## Related Pages
+- [[thermal/concepts/microchannel-liquid-cooling]] — package-integrated channels, manifolds, and mechanical risks
 - [[compute/concepts/gpu-architecture]] — heat source
 - [[power/concepts/dc-power-distribution-architectures]] — power and cooling are coupled
 - [[rack-pod/concepts/pod-and-superpod-architectures]] — cooling at pod scale

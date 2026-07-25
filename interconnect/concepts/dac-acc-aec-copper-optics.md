@@ -4,7 +4,7 @@ created: 2026-07-26
 updated: 2026-07-26
 type: comparison
 tags: [copper, interconnect, ethernet, distance, optics, comparison]
-sources: []
+sources: [raw/articles/optics.md]
 ---
 
 # DAC, ACC, AEC — Copper Interconnects and the Optics Boundary
@@ -77,7 +77,12 @@ CPO replaces the pluggable optic module with on-package optical engines. This ch
 - Makes 800G+ optical feasible for shorter reaches
 - Broadcom, Cisco, Marvell all sampling CPO switches in 2025-2026
 
+### Linear Signal Conditioning
+
+Linear pluggable optics and analog active copper reduce or avoid full module-side DSP/retimer functions. They can lower power and latency when the host SerDes and channel are sufficiently controlled, but they tighten system-level linearity, noise, interoperability, and temperature margins. [[interconnect/entities/semtech-signal-integrity]] is one component-vendor example.
+
 ## Related Pages
+- [[interconnect/entities/semtech-signal-integrity]] — linear optical PMDs and copper equalizers
 - [[interconnect/concepts/ethernet-speeds-and-standards]] — speed standards with reach details
 - [[interconnect/concepts/infiniband-vs-ethernet]] — fabric that uses these cables
 - [[interconnect/concepts/nvlink-and-nvswitch]] — GPU interconnect (mostly PCB, not cables)

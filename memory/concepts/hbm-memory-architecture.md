@@ -4,7 +4,7 @@ created: 2026-07-26
 updated: 2026-07-26
 type: concept
 tags: [hbm, memory, bandwidth, capacity, gpu, accelerator]
-sources: []
+sources: [raw/articles/hbm-for-data-center.md, raw/articles/3dic-bonding.md]
 ---
 
 # HBM (High Bandwidth Memory) Architecture
@@ -29,6 +29,8 @@ HBM is a 3D-stacked DRAM technology that revolutionized accelerator memory by pl
 - **Microbumps** — 40-50 μm pitch connections between dies in the stack
 - **Logic die** — base layer containing refresh, timing, and training circuitry
 - **Interposer** — silicon substrate with metal layers routing HBM stacks to the GPU/accelerator
+- Intermediate dies require TSVs to relay signals between their front and back interfaces; the top die does not normally need a pass-through connection.
+- Hybrid bonding is a future path to finer pitch and lower interface parasitics, but it does not eliminate vertical routing through intermediate silicon. See [[shared/concepts/3dic-bonding-and-tsvs]].
 
 ### Interface
 - **1024-bit wide per stack** — 16 channels × 32 bits (HBM2e) or 8 channels × 64 bits (HBM3)
@@ -73,6 +75,7 @@ This is the **"HBM wall"** — compute scales with Moore's Law / process shrinks
 | Trainium 2 | HBM3 | 8? | 192 GB | 6.4 TB/s |
 
 ## Related Pages
+- [[memory/entities/rambus-hbm-interface-ip]] — merchant HBM controller/PHY IP and enablement
 - [[memory/concepts/lpddr-memory]] — LPDDR role in DC (boot, metadata, CPU memory)
 - [[compute/concepts/gpu-architecture]] — how HBM integrates with GPU compute
 - [[memory/concepts/hbf-high-bandwidth-fabric]] — HBF: the next paradigm beyond HBM

@@ -4,10 +4,12 @@ created: 2026-07-26
 updated: 2026-07-26
 type: concept
 tags: [nvlink, interconnect, fabric, gpu, pcie, topology]
-sources: []
+sources: [raw/articles/ai-data-center-interconnect.md, raw/articles/hbm-for-data-center.md]
 ---
 
 # NVLink and NVSwitch
+
+In scaling terminology, NVLink/NVSwitch is a **scale-up** accelerator fabric. PCIe/CXL host attachment and InfiniBand/Ethernet scale-out fabrics occupy different domains; see [[interconnect/concepts/ai-fabric-scaling-taxonomy]].
 
 NVLink is NVIDIA's high-bandwidth, low-latency GPU-to-GPU interconnect, forming the backbone of multi-GPU nodes. NVSwitch is a crossbar switch ASIC that enables full any-to-any connectivity within a node. Together they define **NVIDIA's intra-node fabric** — distinct from InfiniBand (inter-node).
 
@@ -94,6 +96,7 @@ NVLink's high bandwidth significantly impacts training efficiency:
 For a B200 DGX pod, NVLink handles intra-node communication at 1.8 TB/s, while InfiniBand XDR handles inter-node at 800 Gb/s (100 GB/s). ~18x more bandwidth inside the node than between nodes.
 
 ## Related Pages
+- [[interconnect/concepts/ai-fabric-scaling-taxonomy]] — scale-up, scale-out, scale-across, and host attachment
 - [[compute/concepts/gpu-architecture]] — GPU that NVLink connects
 - [[interconnect/concepts/infiniband-vs-ethernet]] — inter-node fabric complementing NVLink
 - [[interconnect/concepts/ethernet-speeds-and-standards]] — inter-node alternative

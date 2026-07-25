@@ -26,3 +26,17 @@
 - Created rack-pod/concepts/pod-and-superpod-architectures.md
 - Updated index.md with all 13 pages
 - All pages cross-linked with [[wikilinks]]
+
+## [2026-07-26] ingest | Data Center consulting notes
+- Ingested raw/articles/3dic-bonding.md
+- Ingested raw/articles/ai-data-center-interconnect.md
+- Ingested raw/articles/gpu-cooling.md
+- Ingested raw/articles/hbm-for-data-center.md
+- Ingested raw/articles/optics.md
+- Created shared/concepts/3dic-bonding-and-tsvs.md
+- Created interconnect/concepts/ai-fabric-scaling-taxonomy.md
+- Created thermal/concepts/microchannel-liquid-cooling.md
+- Created interconnect/entities/semtech-signal-integrity.md
+- Created memory/entities/rambus-hbm-interface-ip.md
+- Updated HBM, NVLink/NVSwitch, copper/optics, and liquid-cooling concept pages
+- Updated index.md and cross-links
