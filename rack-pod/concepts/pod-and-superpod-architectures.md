@@ -4,7 +4,8 @@ created: 2026-07-26
 updated: 2026-07-26
 type: concept
 tags: [rack, pod, superpod, topology, scale, fabric]
-sources: []
+sources: [raw/articles/baidu-china-ai-superpod-waic-2026.md]
+confidence: medium
 ---
 
 # Pod and Superpod Architectures
@@ -89,6 +90,32 @@ These typically follow a **leaf-spine CLOS** topology with 32-128 leaf switches 
 ## Level 3: The Superpod
 
 Multiple pods connected via a higher-tier network to form a superpod — 1,000+ GPUs, up to 100,000+.
+
+### Terminology and Scale-up Superpods
+
+This wiki uses **superpod** for the Chinese industry term **超节点**, following the owner's terminology. Vendor usage is not uniform: some superpods are multi-pod scale-out clusters, while others are tightly coupled scale-up domains intended to make tens, hundreds, or more than one thousand accelerators behave like a single system with direct peer-memory access, unified addressing, and global scheduling.
+
+At WAIC 2026, Chinese vendors emphasized the latter system-level definition. Reported examples included:
+
+| System or approach | Reported scale | Architectural emphasis |
+|---|---:|---|
+| Huawei Ascend Atlas 950 | 1,024 accelerators; 256 TB globally addressed memory | Lingqu interconnect, unified addressing, global scheduling |
+| Moore Threads superpod | 256 GPUs | MTLink and direct cross-card memory access |
+| Huawei Atlas 850E | Up to 96 accelerators | Air-cooled deployment in existing standard-cabinet facilities |
+
+The Atlas 950 figures of 1 EFLOPS FP8 and 2 EFLOPS FP4 are reported vendor claims and should be verified against primary documentation before comparison. The broader architectural point is more durable: when single-device compute or memory is insufficient, the product boundary expands to include the fabric, switching, software stack, power, cooling, and operational fault domain.
+
+### Superpod Engineering and Commercial Viability
+
+A large accelerator count is useful only when the system can operate reliably and economically:
+
+- **Interconnect:** bandwidth and latency must remain controlled as the domain crosses boards, servers, and racks. Copper is lowest-cost at short reach, while attenuation, bulk, heat, and routing pressure push longer paths toward optics; see [[interconnect/concepts/dac-acc-aec-copper-optics]].
+- **Fault containment:** a failed accelerator, module, link, or switch must not collapse utilization across the whole domain. Modular isolation and serviceability matter as much as peak topology.
+- **Facility integration:** the source describes roughly 400 kW-class systems, making power delivery, cooling, cabinet structure, and data-center retrofit constraints part of the product.
+- **Software:** direct peer-memory semantics, collective libraries, operator coverage, scheduling, and migration from CUDA-oriented workloads determine usable rather than theoretical performance.
+- **Economics:** buyers must evaluate utilization, migration work, maintenance, supply continuity, and total cost of ownership. Many workloads remain adequately served by 8- or 16-accelerator systems.
+
+Air-cooled designs such as the reported Atlas 850E trade density for deployment compatibility, while high-density liquid-cooled systems demand facility-water infrastructure. This makes cooling strategy a deployment segmentation variable, not merely a thermal implementation detail. ^[raw/articles/baidu-china-ai-superpod-waic-2026.md]
 
 ### NVIDIA DGX SuperPOD (Large Scale)
 

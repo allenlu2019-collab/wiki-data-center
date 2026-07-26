@@ -56,6 +56,8 @@ All tags must be from this taxonomy. Add new tags here BEFORE using them.
 ### Interconnect
 - `copper` — copper interconnects: DAC, ACC, AEC
 - `optics` — optical interconnects: SR, DR, FR, LR, ZR
+- `silicon-photonics` — silicon-photonic devices, optical engines, and integration platforms
+- `pdk` — process design kits, verified component libraries, design rules, and compact models
 - `ethernet` — Ethernet: 25/50/100/200/400/800/1.6T
 - `infiniband` — InfiniBand: HDR, NDR, XDR
 - `nvlink` — NVIDIA NVLink, NVSwitch
@@ -103,6 +105,8 @@ All tags must be from this taxonomy. Add new tags here BEFORE using them.
 ### Meta
 - `comparison` — side-by-side vendor/product analysis
 - `vendor` — vendor-specific content (NVIDIA, AMD, Intel, Google, AWS)
+- `foundry` — semiconductor and photonics manufacturing platforms
+- `eda` — electronic and photonic design-automation tools and workflows
 - `standard` — industry standards (OCP, IEEE, JEDEC)
 - `benchmark` — performance benchmarks
 - `timeline` — technology evolution over time

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-07-26 | Total pages: 19
+> Last updated: 2026-07-26 | Total pages: 21
 
 ## Compute — Concepts
 - [[compute/concepts/gpu-architecture]] — GPU accelerator design, memory subsystem, scaling architecture
@@ -29,11 +29,13 @@
 - [[interconnect/concepts/infiniband-vs-ethernet]] — Head-to-head for AI fabrics, UEC, cost/performance/topology
 - [[interconnect/concepts/nvlink-and-nvswitch]] — GPU-to-GPU fabric, NVSwitch crossbar, NVLink-C2C
 - [[interconnect/concepts/dac-acc-aec-copper-optics]] — Copper cable types, optics boundary, AI cluster cabling
+- [[interconnect/concepts/silicon-photonics-pdk-and-foundry-ecosystem]] — Photonic PDK layers, multiphysics models, EDA integration, and foundry platform moats
 
 ## Interconnect — Entities
 - [[interconnect/entities/semtech-signal-integrity]] — Linear optical PMDs and active-copper signal conditioning
 
 ## Interconnect — Comparisons
+- [[interconnect/comparisons/silicon-photonics-vs-cmos-pdk]] — Side-by-side comparison of devices, physics, compact models, verification, portability, and foundry lock-in
 
 ## Packaging — Concepts
 
@@ -64,7 +66,7 @@
 ## Thermal — Comparisons
 
 ## Rack/Pod — Concepts
-- [[rack-pod/concepts/pod-and-superpod-architectures]] — Rack/pod/superpod hierarchy, DGX SuperPOD, Exascale topology
+- [[rack-pod/concepts/pod-and-superpod-architectures]] — Rack/pod/superpod hierarchy, scale-up superpods, DGX SuperPOD, and facility constraints
 
 ## Rack/Pod — Entities
 

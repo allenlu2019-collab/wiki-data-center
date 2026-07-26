@@ -54,3 +54,23 @@
 - Created passive/concepts/pcb-ccl-signal-integrity.md
 - Updated interconnect/concepts/dac-acc-aec-copper-optics.md with a backlink
 - Updated index.md page count and Passive concepts section
+
+## [2026-07-26] ingest | China AI superpods at WAIC 2026
+- Ingested raw/articles/baidu-china-ai-superpod-waic-2026.md from 报告派/Baidu
+- Normalized the source term 超节点 as superpod per wiki-owner terminology
+- Updated rack-pod/concepts/pod-and-superpod-architectures.md with Chinese scale-up superpod architectures, facility constraints, reliability, and TCO considerations
+- Updated interconnect/concepts/ai-fabric-scaling-taxonomy.md to distinguish superpod product labels from scale-up and scale-out communication semantics
+- Updated the rack/pod index summary
+
+## [2026-07-26] ingest | Silicon photonics PDK and foundry ecosystem
+- Ingested raw/articles/simple-tech-trend-silicon-photonics-pdk.md from Simple Tech Trend
+- Added silicon-photonics, pdk, foundry, and eda tags to SCHEMA.md
+- Created interconnect/concepts/silicon-photonics-pdk-and-foundry-ecosystem.md
+- Updated interconnect/concepts/ethernet-speeds-and-standards.md with a PDK/CPO backlink
+- Updated index.md page count and Interconnect concepts section
+
+## [2026-07-26] create | Silicon photonics PDK vs CMOS PDK comparison
+- Created interconnect/comparisons/silicon-photonics-vs-cmos-pdk.md
+- Compared device libraries, physical domains, compact models, process variation, verification, portability, packaging interaction, and foundry lock-in
+- Updated interconnect/concepts/silicon-photonics-pdk-and-foundry-ecosystem.md with a backlink
+- Updated index.md page count and Interconnect comparisons section

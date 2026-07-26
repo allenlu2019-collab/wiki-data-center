@@ -4,7 +4,7 @@ created: 2026-07-26
 updated: 2026-07-26
 type: concept
 tags: [fabric, topology, scale, gpu, tpu, pcie, cxl, nvlink]
-sources: [raw/articles/ai-data-center-interconnect.md]
+sources: [raw/articles/ai-data-center-interconnect.md, raw/articles/baidu-china-ai-superpod-waic-2026.md]
 ---
 
 # AI Fabric Scaling Taxonomy
@@ -21,6 +21,12 @@ AI systems use several interconnect domains with different semantics. “Scale-u
 | Scale-across | Pods/sites or composable optical domains | Long-reach fabric extension | Optical circuit switching, photonic fabrics | Reach, reconfiguration, and power efficiency |
 
 The labels are architectural rather than purely physical. A path that detours through the host CPU is host-mediated communication, even if it ultimately moves data between accelerators.
+
+## Superpod Boundary
+
+The term **superpod** (including Chinese **超节点**) does not by itself identify one fabric domain. A tightly coupled superpod may extend the scale-up domain across multiple servers or racks through proprietary electrical or optical links, unified memory addressing, and global scheduling. A larger deployment may instead combine several scale-up islands over a scale-out fabric. Architecture should therefore be classified by communication semantics and fault boundaries, not by the vendor's card-count label.
+
+Chinese vendor presentations at WAIC 2026 illustrate this distinction: Huawei's Lingqu and Moore Threads' MTLink are positioned as scale-up mechanisms, while thousand-card and larger clusters still require system-level topology, reliability, cooling, and orchestration beyond the link protocol. ^[raw/articles/baidu-china-ai-superpod-waic-2026.md]
 
 ## Coherency Semantics
 

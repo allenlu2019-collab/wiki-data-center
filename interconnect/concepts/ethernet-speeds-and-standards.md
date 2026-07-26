@@ -47,6 +47,8 @@ See [[interconnect/concepts/dac-acc-aec-copper-optics]] for detailed comparison.
 ### Co-Packaged Optics (CPO)
 The next frontier: integrate optical engines directly into the switch ASIC package, eliminating the pluggable module. 800G CPO switches appearing in 2025-2026 from Broadcom, Cisco, Marvell. Saves 30-50% power vs. pluggable optics.
 
+Repeatable CPO production depends on foundry-qualified photonic building blocks, compact models, design rules, and packaging-aware verification; see [[interconnect/concepts/silicon-photonics-pdk-and-foundry-ecosystem]].
+
 ## Ethernet in AI Clusters
 
 Modern AI training clusters (10,000+ GPUs) require massive east-west bandwidth. Ethernet competes with InfiniBand for the AI fabric role:
