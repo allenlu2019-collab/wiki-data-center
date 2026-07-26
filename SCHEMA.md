@@ -1,7 +1,7 @@
 # Wiki Schema — Data Center Infrastructure
 
 ## Domain
-Modern data center infrastructure — compute hardware (CPU, GPU, TPU, NPU), memory architecture (HBM, HBF, LPDDR), interconnect (copper/optical networking at all speeds/distances), power delivery systems (48V, 400V, 800V), thermal & cooling, and rack/pod/superpod system architectures.
+Modern data center infrastructure — compute hardware (CPU, GPU, TPU, NPU), memory architecture (HBM, HBF, LPDDR), interconnect (copper/optical networking at all speeds/distances), chip-level advanced packaging (CoWoS, 2.5D/3D IC, chiplets, interposers, bonding), passive components and substrates (MLCCs, PCBs, ABF, inductors, resistors), power delivery systems (48V, 400V, 800V), thermal & cooling, and rack/pod/superpod system architectures.
 
 ## Conventions
 - File names: lowercase, hyphens, no spaces (e.g., `hbm-memory-architecture.md`)
@@ -63,6 +63,25 @@ All tags must be from this taxonomy. Add new tags here BEFORE using them.
 - `cxl` — Compute Express Link
 - `fabric` — network fabric technologies
 - `distance` — reach categories (SR 100m, DR 500m, FR 2km, ZR 120km)
+
+### Packaging
+- `advanced-packaging` — chip-level advanced packaging and heterogeneous integration
+- `cowos` — CoWoS and related 2.5D integration platforms
+- `3dic` — 3D IC stacking and vertical integration
+- `chiplet` — chiplet architectures and die-to-die integration
+- `interposer` — silicon, organic, and glass interposers
+- `hybrid-bonding` — direct copper and dielectric hybrid bonding
+- `tsv` — through-silicon vias and vertical interconnects
+
+### Passive
+- `mlcc` — multilayer ceramic capacitors
+- `pcb` — printed circuit boards and high-speed board design
+- `ccl` — copper-clad laminates, resin systems, copper foils, and reinforcement fabrics
+- `abf` — Ajinomoto build-up film and package substrates
+- `substrate` — organic, ceramic, and glass package substrates
+- `capacitor` — capacitors and decoupling networks
+- `inductor` — inductors, chokes, and magnetic passive components
+- `resistor` — resistors and passive termination networks
 
 ### Power
 - `48v` — 48V rack-level distribution

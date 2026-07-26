@@ -40,3 +40,17 @@
 - Created memory/entities/rambus-hbm-interface-ip.md
 - Updated HBM, NVLink/NVSwitch, copper/optics, and liquid-cooling concept pages
 - Updated index.md and cross-links
+
+## [2026-07-26] update | Add packaging and passive domains
+- Added packaging as a peer domain for chip-level advanced packaging, including CoWoS, 2.5D/3D IC, chiplets, interposers, hybrid bonding, and TSVs
+- Added passive as a peer domain for MLCCs, PCBs, ABF, substrates, capacitors, inductors, and resistors
+- Added controlled packaging and passive tags to SCHEMA.md
+- Added Packaging and Passive sections to index.md
+- Created packaging/ and passive/ domain directories
+
+## [2026-07-26] ingest | PCB CCL materials and signal integrity
+- Ingested raw/articles/sipi-pcb-ccl-signal-integrity.md from SI/PI Frontier
+- Added the ccl tag to SCHEMA.md
+- Created passive/concepts/pcb-ccl-signal-integrity.md
+- Updated interconnect/concepts/dac-acc-aec-copper-optics.md with a backlink
+- Updated index.md page count and Passive concepts section

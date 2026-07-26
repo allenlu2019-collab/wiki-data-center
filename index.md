@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-07-26 | Total pages: 18
+> Last updated: 2026-07-26 | Total pages: 19
 
 ## Compute — Concepts
 - [[compute/concepts/gpu-architecture]] — GPU accelerator design, memory subsystem, scaling architecture
@@ -34,6 +34,19 @@
 - [[interconnect/entities/semtech-signal-integrity]] — Linear optical PMDs and active-copper signal conditioning
 
 ## Interconnect — Comparisons
+
+## Packaging — Concepts
+
+## Packaging — Entities
+
+## Packaging — Comparisons
+
+## Passive — Concepts
+- [[passive/concepts/pcb-ccl-signal-integrity]] — CCL resin, copper roughness, glass weave, and loss classes for 112G/224G PAM4 boards
+
+## Passive — Entities
+
+## Passive — Comparisons
 
 ## Power — Concepts
 - [[power/concepts/dc-power-distribution-architectures]] — 48V/400V/800V architectures, PSU, UPS, density trends

@@ -86,4 +86,5 @@ Linear pluggable optics and analog active copper reduce or avoid full module-sid
 - [[interconnect/concepts/ethernet-speeds-and-standards]] — speed standards with reach details
 - [[interconnect/concepts/infiniband-vs-ethernet]] — fabric that uses these cables
 - [[interconnect/concepts/nvlink-and-nvswitch]] — GPU interconnect (mostly PCB, not cables)
+- [[passive/concepts/pcb-ccl-signal-integrity]] — laminate, copper roughness, and glass-weave limits inside board-level channels
 - [[interconnect/concepts/ethernet-speeds-and-standards]] — optical reach standards
