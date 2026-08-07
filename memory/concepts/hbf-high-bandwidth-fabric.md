@@ -1,15 +1,24 @@
 ---
-title: HBF — High Bandwidth Fabric (Disaggregated Memory)
+title: Disaggregated High-Bandwidth Memory Fabric (Legacy HBF Label)
 created: 2026-07-26
-updated: 2026-07-26
+updated: 2026-08-04
 type: concept
-tags: [hbf, memory, interconnect, memory-pool, fabric, cxl]
+tags: [memory, interconnect, memory-pool, fabric, cxl]
 sources: []
 ---
 
-# HBF — High Bandwidth Fabric
+# Disaggregated High-Bandwidth Memory Fabric
 
-HBF (High Bandwidth Fabric) is the emerging paradigm of **disaggregated accelerator memory** — physically separating HBM-like memory from the GPU/accelerator and connecting it via a high-bandwidth fabric. This is distinct from HBM (stacked on the interposer) and CXL (CPU memory expansion).
+> **Terminology correction, 2026-08-04:** The OCP-backed industry acronym HBF
+> now means **High Bandwidth Flash**. See
+> [[memory/concepts/hbf-high-bandwidth-flash]]. This page preserves an earlier
+> local concept for fabric-attached memory, but that concept should no longer be
+> abbreviated as HBF.
+
+A disaggregated high-bandwidth memory fabric physically separates bulk memory
+from a GPU or accelerator and connects it through a high-bandwidth fabric. This
+is distinct from local HBM and from High Bandwidth Flash, although an HBF device
+could become one possible memory tier behind such a fabric.
 
 ## Motivation: The HBM Wall
 
@@ -19,7 +28,8 @@ HBM scaling faces fundamental physical limits:
 - **Power**: 8 HBM3e stacks draw ~100W per GPU — already significant
 - **Cost**: HBM3e costs ~$20-30/GB — 10x DDR5, and scales superlinearly with bandwidth
 
-HBF proposes: put the memory somewhere else, connect via optical fiber or advanced electrical links, and pool it across many accelerators.
+The fabric concept proposes putting bulk memory elsewhere, connecting it through
+optical or advanced electrical links, and pooling it across accelerators.
 
 ## Architecture Concepts
 

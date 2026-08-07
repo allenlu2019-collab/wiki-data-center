@@ -46,7 +46,8 @@ All tags must be from this taxonomy. Add new tags here BEFORE using them.
 
 ### Memory
 - `hbm` — HBM (High Bandwidth Memory): HBM2e, HBM3, HBM4
-- `hbf` — HBF (High Bandwidth Fabric/CXL-based memory)
+- `hbf` — HBF (High Bandwidth Flash): stacked NAND connected through UCIe
+- `z-nand` — Samsung low-latency NAND and Z-SSD products
 - `lpddr` — LPDDR: LPDDR5, LPDDR5X, LPDDR6
 - `bandwidth` — memory bandwidth metrics, bw per TFLOP ratios
 - `capacity` — memory capacity per node, per rack

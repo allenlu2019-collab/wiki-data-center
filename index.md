@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-07-26 | Total pages: 21
+> Last updated: 2026-08-05 | Total pages: 28
 
 ## Compute — Concepts
 - [[compute/concepts/gpu-architecture]] — GPU accelerator design, memory subsystem, scaling architecture
@@ -10,12 +10,15 @@
 
 ## Compute — Entities
 - [[compute/entities/nvidia-gpu-lineage]] — Full NVIDIA data center GPU product history
+- [[compute/entities/nvidia-vera-cpu]] — Vera CPU, Olympus cores, LPDDR5X memory, coherent fabric, and agentic-system role
 
 ## Compute — Comparisons
 
 ## Memory — Concepts
 - [[memory/concepts/hbm-memory-architecture]] — HBM generations, bandwidth, Ops:BW gap, the "HBM wall"
-- [[memory/concepts/hbf-high-bandwidth-fabric]] — Disaggregated memory via fabric (NVLink, CXL, optical)
+- [[memory/concepts/hbf-high-bandwidth-flash]] — OCP-standard stacked NAND tier using UCIe, up to 512 GB and 0.4-3.0 TB/s reported
+- [[memory/concepts/hbf-high-bandwidth-fabric]] — Legacy local label for disaggregated memory via NVLink, CXL, or optical fabric; no longer abbreviated HBF
+- [[memory/concepts/z-nand-low-latency-flash]] — Samsung low-latency NAND, SZ985 specifications, application evidence, and relationship to HBF
 - [[memory/concepts/lpddr-memory]] — LPDDR in data center servers, Grace Hopper, edge inference
 
 ## Memory — Entities

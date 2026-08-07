@@ -74,3 +74,45 @@
 - Compared device libraries, physical domains, compact models, process variation, verification, portability, packaging interaction, and foundry lock-in
 - Updated interconnect/concepts/silicon-photonics-pdk-and-foundry-ecosystem.md with a backlink
 - Updated index.md page count and Interconnect comparisons section
+## [2026-08-03] ingest | NVIDIA Vera CPU and Olympus core deep dive
+- Ingested `raw/articles/the-register-nvidia-vera-olympus-deep-dive.md`
+- Created `compute/entities/nvidia-vera-cpu.md`
+- Recorded Vera's monolithic 88-core compute die, Olympus pipeline, spatial multithreading, LPDDR5X subsystem, coherent fabric, PCIe/CXL, and NVLink-C2C architecture
+- Separated NVIDIA performance and memory-power claims from independently established facts
+- Updated the compute entity index and page count
+
+## [2026-08-03] update | Vera CPU coherence boundaries
+- Added Q&A covering single-socket coherence, dual-socket coherent NUMA over NVLink-C2C, and the boundary beyond one Vera CPU Superchip
+- Distinguished networked rack-scale nodes from a hardware cache-coherent domain
+- Clarified that CXL 3.1 memory coherence and pooling do not automatically create rack-wide CPU cache coherence
+- Compared the hierarchy with AMD xGMI/Infinity Fabric and Intel UPI systems
+
+## [2026-08-03] update | Vera roles, x86 comparison, and CPU-only server
+- Added Q&A on Vera's GPU-host and agent-runtime roles
+- Clarified that x86 can perform both roles and that Vera's differentiation is integration and specialization rather than exclusive capability
+- Added the potential advantages, target workloads, and limitations of a Vera-only CPU server
+- Distinguished memory-intensive CPU suitability from GPU-class dense tensor throughput
+
+## [2026-08-04] ingest | First OCP High Bandwidth Flash specification
+- Ingested `raw/articles/technews-sk-hynix-sandisk-hbf-standard.md`
+- Created `memory/concepts/hbf-high-bandwidth-flash.md`
+- Recorded 8/16-die stacks, up to 512 GB, three bandwidth grades spanning approximately 0.4-3.0 TB/s, and UCIe processor attachment
+- Distinguished existence of a write path from HBM-like runtime write behavior
+- Corrected the repository taxonomy so unqualified HBF means High Bandwidth Flash
+- Retained the older disaggregated-memory-fabric page under an explicit legacy-label warning
+- Updated the memory index and page count
+
+## [2026-08-05] ingest | Samsung Z-NAND SSD technology brief
+- Ingested `raw/papers/samsung-z-nand-ssd-technology-brief.md` from Samsung's 2017 primary-source brochure
+- Created `memory/concepts/z-nand-low-latency-flash.md`
+- Recorded SZ985 capacity, PCIe interface, sequential bandwidth, random IOPS, latency, and 30 DWPD endurance
+- Preserved Samsung's RocksDB, Fatcache, and Memcached benchmark ratios as vendor claims with reproducibility caveats
+- Compared Z-NAND's PCIe SSD implementation with HBF's proposed UCIe package-level tier without asserting that HBF uses Z-NAND
+- Added the controlled `z-nand` tag and updated the memory index
+
+## [2026-08-05] ingest | Samsung zHBM, zNAND-O, and V10 BV-NAND
+- Ingested `raw/articles/technews-samsung-zhbm-znand-o-v10-bv-nand.md`
+- Recorded Samsung's zHBM, V10 BV-NAND, and zNAND-O announcements with vendor-claim caveats
+- Added zNAND-O's documented 4-layer and 8-layer edge-AI positioning to the Z-NAND concept page
+- Distinguished zNAND-O from the separately specified UCIe-based HBF proposal
+- Audited the supplied interpretation and marked UCIe, TSV, DRAM bypass, near-memory compute, and direct-cache access as unverified for zNAND-O

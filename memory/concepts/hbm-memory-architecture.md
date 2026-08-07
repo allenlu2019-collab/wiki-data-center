@@ -1,10 +1,10 @@
 ---
 title: HBM Memory Architecture
 created: 2026-07-26
-updated: 2026-07-26
+updated: 2026-08-05
 type: concept
 tags: [hbm, memory, bandwidth, capacity, gpu, accelerator]
-sources: [raw/articles/hbm-for-data-center.md, raw/articles/3dic-bonding.md]
+sources: [raw/articles/hbm-for-data-center.md, raw/articles/3dic-bonding.md, raw/articles/technews-samsung-zhbm-znand-o-v10-bv-nand.md]
 ---
 
 # HBM (High Bandwidth Memory) Architecture
@@ -74,7 +74,22 @@ This is the **"HBM wall"** — compute scales with Moore's Law / process shrinks
 | TPU v5p | HBM2e | 8? | 95 GB | 4.8 TB/s |
 | Trainium 2 | HBM3 | 8? | 192 GB | 6.4 TB/s |
 
+## Samsung zHBM Concept
+
+Samsung's FMS 2026 zHBM concept places stacked HBM vertically above an AI
+accelerator rather than beside it. Samsung estimates up to 8x HBM5 performance,
+more than 10x density, 3x energy efficiency, and less than half the thermal
+resistance, with customizable interlayer IP.
+
+These figures are vendor projections rather than a shipping specification or
+independent benchmark. The comparison basis, workloads, package dimensions,
+power envelope, cooling assumptions, and manufacturing constraints were not
+disclosed in the reviewed article. zHBM should therefore be tracked as an
+advanced-packaging direction, not entered into system models as measured HBM
+performance.
+
 ## Related Pages
+- [[raw/articles/technews-samsung-zhbm-znand-o-v10-bv-nand]]
 - [[memory/entities/rambus-hbm-interface-ip]] — merchant HBM controller/PHY IP and enablement
 - [[memory/concepts/lpddr-memory]] — LPDDR role in DC (boot, metadata, CPU memory)
 - [[compute/concepts/gpu-architecture]] — how HBM integrates with GPU compute
