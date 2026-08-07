@@ -27,6 +27,13 @@
 - Updated index.md with all 13 pages
 - All pages cross-linked with [[wikilinks]]
 
+## [2026-07-26] lint | 0 real issues found
+- Ran full lint (orphans, broken links, index completeness, frontmatter, tags, page size)
+- **Fixed:** 7 unknown tags (compute, interconnect, memory, memory-pool, nvidia, power, thermal) added to SCHEMA.md taxonomy
+- **Layer-2 clean:** All 18 wiki pages have valid frontmatter, all wikilinks resolve, all pages indexed, all 45 tags in taxonomy
+- **False positives (no action):** SCHEMA.md `[[wikilinks]]`/`[[compute/gpu-architecture]]` are backticked convention examples; raw/ `![[Pasted image]]` are Obsidian image embeds; `[[2024-1231-Perplexity]]` is an external note link
+- **Expected (Layer 1):** raw/articles/* are immutable source material — not indexed, not orphan-checked, no wiki frontmatter required
+
 ## [2026-07-26] ingest | Data Center consulting notes
 - Ingested raw/articles/3dic-bonding.md
 - Ingested raw/articles/ai-data-center-interconnect.md

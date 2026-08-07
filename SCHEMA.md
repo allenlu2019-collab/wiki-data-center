@@ -52,7 +52,13 @@ All tags must be from this taxonomy. Add new tags here BEFORE using them.
 - `bandwidth` — memory bandwidth metrics, bw per TFLOP ratios
 - `capacity` — memory capacity per node, per rack
 - `latency` — memory latency, NUMA effects
+- `interconnect` — network interconnect technologies
 - `memory-pool` — disaggregated / pooled memory
+- `power` — power delivery systems
+- `compute` — compute hardware (CPU, GPU, TPU, NPU)
+- `memory` — memory subsystems (HBM, LPDDR, HBF)
+- `thermal` — thermal management
+- `nvidia` — NVIDIA-specific content
 
 ### Interconnect
 - `copper` — copper interconnects: DAC, ACC, AEC
