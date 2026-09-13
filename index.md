@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-08-05 | Total pages: 28
+> Last updated: 2026-08-16 | Total pages: 30
 
 ## Compute — Concepts
 - [[compute/concepts/gpu-architecture]] — GPU accelerator design, memory subsystem, scaling architecture
@@ -33,12 +33,14 @@
 - [[interconnect/concepts/nvlink-and-nvswitch]] — GPU-to-GPU fabric, NVSwitch crossbar, NVLink-C2C
 - [[interconnect/concepts/dac-acc-aec-copper-optics]] — Copper cable types, optics boundary, AI cluster cabling
 - [[interconnect/concepts/silicon-photonics-pdk-and-foundry-ecosystem]] — Photonic PDK layers, multiphysics models, EDA integration, and foundry platform moats
+- [[interconnect/concepts/optical-interconnect-pic-eic-packaging-integration]] — PIC/EIC fabrication, electronics partitioning, packaging interfaces, foundry mappings, and COUPE integration
 
 ## Interconnect — Entities
 - [[interconnect/entities/semtech-signal-integrity]] — Linear optical PMDs and active-copper signal conditioning
 
 ## Interconnect — Comparisons
 - [[interconnect/comparisons/silicon-photonics-vs-cmos-pdk]] — Side-by-side comparison of devices, physics, compact models, verification, portability, and foundry lock-in
+- [[interconnect/comparisons/silicon-photonics-foundry-positioning]] — Verified positioning of TSMC, Tower, GlobalFoundries, and the evidence boundary for SMIC
 
 ## Packaging — Concepts
 

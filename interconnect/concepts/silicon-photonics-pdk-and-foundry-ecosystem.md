@@ -1,7 +1,7 @@
 ---
 title: Silicon Photonics PDK and Foundry Ecosystem
 created: 2026-07-26
-updated: 2026-07-26
+updated: 2026-08-16
 type: concept
 tags: [silicon-photonics, optics, pdk, foundry, eda, advanced-packaging]
 sources: [raw/articles/simple-tech-trend-silicon-photonics-pdk.md]
@@ -50,16 +50,33 @@ A proven PDK creates switching costs through accumulated layouts, simulation flo
 
 The moat is reinforced by EDA integration. Foundry PDKs are bound into flows such as Synopsys OptoCompiler, Luceda IPKISS, Keysight ADS, and Cadence environments. Ecosystem quality therefore depends on both the manufacturing process and how smoothly its libraries, models, verification, and packaging data work across tools.
 
-## Platform landscape
+## Leading foundry landscape
 
-| Platform | Reported positioning | Strategic emphasis |
+“Leading” depends on the required service model. An open merchant foundry that accepts external designs is different from a vertically integrated manufacturer with large internal volume, while an R&D platform may offer easier MPW access but not comparable production capacity.
+
+| Organization and platform | Service model | Current position and strength |
 |---|---|---|
-| GlobalFoundries Fotonix | Mature silicon-photonics PDK ecosystem | Expanded high-speed and photonic-native compact modeling with EDA partners |
-| Tower + OpenLight | OpenLight PDK/IP connected to Tower production | Fabless photonic design and heterogeneous laser integration workflow |
-| TSMC COUPE | Silicon photonics integrated with advanced packaging | Circuit-designer flow and co-packaged optical integration |
-| Samsung 300 mm SiPh | Large-wafer manufacturing platform | End-to-end path from photonic ICs toward CPO |
+| GlobalFoundries — GF Fotonix | Open commercial foundry | One of the strongest established choices for external high-volume production. Its 300 mm platform combines photonics and RF CMOS, supports pluggables through CPO, and has production-proven 100G/λ capability, demonstrated 200G/λ, and a 400G/λ roadmap. |
+| Tower Semiconductor — PH18 | Open commercial foundry | Mature 220 nm SOI platform with low-loss waveguides, modulators, Ge photodetectors, PDK/MPW access, and heterogeneous InP or GaAs quantum-dot laser options. Particularly accessible for fabless photonic products. |
+| TSMC — COUPE | Commercial foundry and advanced-packaging integration | Strategically important for AI and HPC CPO. COUPE uses SoIC-X to stack an electrical die over a photonic die and can be integrated into CoWoS. Its main differentiation is co-optimization with advanced logic and packaging; its open SiPh ecosystem is less mature than GF or Tower's established offerings. |
+| Intel Silicon Photonics | Primarily vertically integrated manufacturer | Demonstrates the largest disclosed internal production scale among this group: Intel reports more than eight million PICs and 32 million integrated lasers shipped. It is a manufacturing and optical-I/O leader, but historically has not offered the same broad merchant-foundry access as GF or Tower. |
+| imec — iSiPP200/iSiPP300 | R&D, prototyping, process transfer, and low volume | Leading development platform with a mature 200 mm silicon-validated PDK and a 300 mm path. Strong for device research, custom process modules, MPWs, and transferring technology toward commercial foundries. |
+| AIM Photonics | Public-private R&D and MPW ecosystem | Provides 300 mm SiPh prototyping through Albany NanoTech plus packaging, assembly, and testing in Rochester. Strong US access for startups, universities, and government programs rather than being a direct peer to a high-volume merchant foundry. |
+| UMC — licensed iSiPP300 | Emerging commercial entrant | Licensed imec's 300 mm, CPO-compatible iSiPP300 technology in December 2025. It is important to watch, but should not yet be treated as equally production-established in SiPh as GF or Tower. |
 
-This landscape changes quickly and should be verified against current primary foundry documentation. PDK access, device options, model bandwidth, laser integration, packaging design kits, and volume-qualification status can differ substantially even when vendors use similar platform language.
+### Practical selection
+
+- **Established open production:** GlobalFoundries and Tower Semiconductor.
+- **Tight AI/CPO integration with leading logic and packaging:** TSMC.
+- **Proven vertically integrated SiPh volume:** Intel.
+- **Research, MPW, and process development:** imec and AIM Photonics.
+- **Emerging 300 mm merchant capacity:** UMC.
+
+For AI interconnects, the most consequential comparison is often **GF Fotonix versus TSMC COUPE**. GF offers a mature open photonics manufacturing platform and PDK ecosystem. TSMC's differentiator is placing the photonic engine inside its SoIC/CoWoS heterogeneous-integration stack alongside advanced compute dies and HBM.
+
+Primary platform references: [GlobalFoundries Fotonix](https://gf.com/technologies/silicon-photonics/), [Tower PH18](https://towersemi.com/2023/03/02/03022023/), [TSMC COUPE](https://pr.tsmc.com/english/news/3136), [Intel Silicon Photonics](https://www.intel.com/content/www/us/en/products/details/network-io/silicon-photonics.html), [imec photonics services](https://www.imec-int.com/en/what-we-offer/development/photonics), [AIM Photonics MPW](https://www.aimphotonics.com/mpw), and [imec–UMC iSiPP300 transfer](https://www.imec-int.com/en/press/umc-licenses-imecs-isipp300-technology-extend-silicon-photonics-capabilities-next-generation).
+
+This landscape changes quickly. PDK availability, customer eligibility, MPW schedules, device options, model bandwidth, laser integration, packaging design kits, and volume qualification must be verified for each program rather than inferred from similar platform language.
 
 ## Open models and portability
 
@@ -87,6 +104,8 @@ This connects directly to the CPO roadmap in [[interconnect/concepts/ethernet-sp
 
 ## Related concepts
 
+- [[interconnect/concepts/optical-interconnect-pic-eic-packaging-integration]] — PIC/EIC processes, partition options, foundry mappings, and COUPE physical integration
+- [[interconnect/comparisons/silicon-photonics-foundry-positioning]] — verified comparison of TSMC, Tower, GF, and the evidence boundary for SMIC
 - [[interconnect/comparisons/silicon-photonics-vs-cmos-pdk]] — differences in physics, models, verification, and portability
 - [[interconnect/concepts/ethernet-speeds-and-standards]] — CPO and Ethernet lane-rate roadmap
 - [[interconnect/concepts/dac-acc-aec-copper-optics]] — reach, power, and packaging tradeoffs

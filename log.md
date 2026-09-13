@@ -123,3 +123,25 @@
 - Added zNAND-O's documented 4-layer and 8-layer edge-AI positioning to the Z-NAND concept page
 - Distinguished zNAND-O from the separately specified UCIe-based HBF proposal
 - Audited the supplied interpretation and marked UCIe, TSV, DRAM bypass, near-memory compute, and direct-cache access as unverified for zNAND-O
+
+## [2026-08-16] update | Leading silicon-photonics foundries
+- Expanded the SiPh PDK ecosystem page with GlobalFoundries, Tower, TSMC, Intel, imec, AIM Photonics, and UMC
+- Distinguished open merchant foundries, vertically integrated manufacturing, R&D/MPW platforms, and emerging commercial capacity
+- Identified GF and Tower as established open-production choices and TSMC as strategically differentiated by SoIC/CoWoS integration
+- Added primary platform references and cautions about PDK access, qualification, and production maturity
+
+## [2026-08-16] verify | AI-generated SiPh foundry comparison
+- Audited user-supplied AI analyses covering TSMC, Tower, GlobalFoundries, and SMIC against primary company material
+- Added a dedicated comparison page separating PIC, EIC, package, and host-system integration boundaries
+- Verified Tower's 200/300 mm platforms, 2027 contracts, prepayments, customer count, and announced capacity expansion as company disclosures
+- Verified GF's AMF acquisition and SCALE/CHIPS roadmap while correcting the US$300 million item from “award” to letter of intent
+- Retained TSMC's COUPE/SoIC/CoWoS architecture but withheld unsupported customer, yield, bandwidth, node, and wafer-capacity claims
+- Classified SMIC as evidence-constrained rather than assigning an unsupported capability score
+
+## [2026-08-16] synthesize | PIC, EIC, packaging, and COUPE integration Q&A
+- Consolidated the optical-interconnect architecture discussion into a dedicated concept page
+- Documented representative PIC and EIC fabrication flows and corrected Ge photodetector terminology
+- Compared integrated versus split DSP, SerDes, driver, TIA, and control-die configurations across pluggable, LPO, NPO, CPO, and optical I/O
+- Mapped Tower, GF Fotonix, and TSMC COUPE to their respective PIC/EIC integration philosophies
+- Explained the probable GPU-to-COUPE electrical path through CoWoS, PIC TDVs, SoIC-X bonds, EIC, and the PIC modulator/detector
+- Compared EIC-on-PIC with PIC-on-EIC while labeling product-specific routing as inference where public detail is incomplete
